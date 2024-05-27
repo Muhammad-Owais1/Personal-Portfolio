@@ -1,0 +1,75 @@
+.skills {
+    padding: 100px 100px 100px 200px;
+}
+
+.skills-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skills-heading h1 {
+    font-size: 35px;
+}
+
+.skills-heading div {
+    height: 2px;
+    width: 80px;
+    background-color: #d9832e;
+}
+
+.skills-heading p {
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 4px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.skills-graphs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skills-graphs .graph{
+    background-color: rgb(237, 237, 237);
+    height: 6px;
+    width: 290px;
+}
+
+.graph div {
+    height: 6px;
+    background-color: #d9832e;
+}
+
+@media (max-width: 710px) {
+    .skills {
+        padding: 100px;
+    }
+}
+
+@media (max-width: 618px) {
+    .skills-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 382px) {
+    .skills {
+        padding: 50px 0 50px 10px ;
+    }
+
+    .skills-container {
+        align-items: stretch;
+        overflow-y: hidden;
+    }
+}
