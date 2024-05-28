@@ -39,6 +39,10 @@ nav i {
     font-size: 30px;
 }
 
+nav a:hover {
+    color: #d9832e;
+}
+
 nav li:first-child {
     font-family: sans-serif;
     font-size: 12px;

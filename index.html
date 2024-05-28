@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/about-me.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/timeline.css">
+    <link rel="stylesheet" href="styles/contact-me.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,37 +25,37 @@
                 <p>Owais</p>
             </li>
             <li>
-                <a href="">
+                <a href="#home">
                     <i class="fa-solid fa-house"></i>
                     <p>Home</p>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#about-me">
                     <i class="fa-solid fa-address-card"></i>
                     <p>About Me</p>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#experience">
                     <i class="fa-solid fa-briefcase"></i>
                     <p>Experience</p>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#projects">
                     <i class="fa-solid fa-diagram-project"></i>
                     <p>Projects</p>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#education">
                     <i class="fa-solid fa-graduation-cap"></i>
                     <p>Education</p>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#contact-me">
                     <i class="fa-solid fa-address-book"></i>
                     <p>Contact Me</p>
                 </a>
@@ -62,7 +63,7 @@
         </ul>
     </nav>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="container">
             <p class="hero-greeting">Hello there...</p>
             <h1>Muhammad Owais</h1>
@@ -85,7 +86,7 @@
         </div>
     </section>
 
-    <section class="about-me">
+    <section id="about-me" class="about-me">
         <div class="about-me-heading">
             <h1>ABOUT ME</h1>
             <div></div>
@@ -94,9 +95,9 @@
         <div class="about-me-content">
             <div class="about-me-img">
                 <div>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-solid fa-envelope"></i>
+                   <a href="https://github.com/Muhammad-Owais1"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammad-owais-87518b282/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:owaistech62@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 </div>
                 <img src="https://garden.spoonflower.com/c/7663222/p/f/m/usGHZguhY9Og0-XpiX3pYxInJoRbMlbKhr_dB_5ZJXTazZlPiAc/Github.jpg"
                     alt="">
@@ -155,7 +156,7 @@
                         </tr>
                     </table>
                 </div>
-                <a href="" download>
+                <a href="/New Resume.pdf" download>
                     <button>Download CV</button>
                 </a>
             </div>
@@ -225,7 +226,7 @@
         </div>
     </section>
     <section class="timeline">
-        <h1>Experience</h1>
+        <h1 id="experience" class="experience">Experience</h1>
         <div class="time">
             <div class="card">
                 <h3>Get Solution</h3>
@@ -240,7 +241,7 @@
             </div>
             <div class="card" style="background-color: transparent;"></div>
         </div>
-        <h1>Projects</h1>
+        <h1 id="projects" >Projects</h1>
         <div class="time">
             <div class="card" style="background-color: transparent;"></div>
             <div class="timeline-center">
@@ -283,12 +284,100 @@
                 <div class="line"></div>
             </div>
             <div class="card">
-                <h3>Weatherliness</h3>
-                <p>Weather App, made with react and Weather API was used. Pure CSS was used for UI.</p>
-                <a href="">weatherliness.netlify.app</a>
+                <h3>Todo App</h3>
+                <p>Stores your pending tasks. Made with Vanilla JavaScript with alot of different features.</p>
+                <a href="">todoapp-by-owais.netlify.app/</a>
             </div>
         </div>
-        
+        <h1 id="education">Education</h1>
+        <div class="time">
+            <div class="card">
+                <h3>O'Levels</h3>
+                <p>Done in August 2022 form The MCH School.</p>
+            </div>
+            <div class="timeline-center">
+                <div class="circle">
+                    <span class="arrow-1"><i class="fa-solid fa-arrow-left"></i></span>
+                    <div></div>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="card" style="background-color: transparent;">
+            </div>
+        </div>
+        <div class="time">
+            <div class="card" style="background-color: transparent;"></div>
+            <div class="timeline-center">
+                <div class="circle">
+                    <div></div>
+                    <span class="arrow-2"><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="card">
+                <h3>A'Levels</h3>
+                <p>Done in 2024 from Zatians Academy</p>
+            </div>
+        </div>
+        <div class="time">
+            <div class="card">
+                <h3>JavaScript Algorithms and Data Structures</h3>
+                <p>Certification done from FreeCodeCamp.</p>
+            </div>
+            <div class="timeline-center">
+                <div class="circle">
+                    <span class="arrow-1"><i class="fa-solid fa-arrow-left"></i></span>
+                    <div></div>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="card" style="background-color: transparent;">
+            </div>
+        </div>
+        <div class="time">
+            <div class="card" style="background-color: transparent;"></div>
+            <div class="timeline-center">
+                <div class="circle">
+                    <div></div>
+                    <span class="arrow-2"><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="card">
+                <h3>Web and App Development Course</h3>
+                <p>In progress from SMIT Saylani Mass IT Training.</p>
+            </div>
+        </div>
+        <div class="time">
+            <div class="card">
+                <h3>Darsenizami</h3>
+                <p>Islamic Scholarship Course, in progress.</p>
+            </div>
+            <div class="timeline-center">
+                <div class="circle">
+                    <span class="arrow-1"><i class="fa-solid fa-arrow-left"></i></span>
+                    <div></div>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="card" style="background-color: transparent;">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-me" class="contact-me">
+        <div>
+            <h4>Email</h4> <p>owaistech62@gmail.com</p>
+        </div>
+        <div>
+            <h4>Whatsapp</h4> <p>+92 3343184293</p>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/muhammad-owais-87518b282/"><h4>Linkedin</h4></a>
+        </div>
+        <div>
+            <a href="https://github.com/Muhammad-Owais1"><h4>GitHub</h4></a>
+        </div>
     </section>
 
     <script src="app.js"></script>

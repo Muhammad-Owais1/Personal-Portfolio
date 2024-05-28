@@ -54,3 +54,43 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+function adjustTimelineCenters() {
+    let centers = document.querySelectorAll('.timeline-center');
+    let cards = document.querySelectorAll('.card')
+    if (window.innerWidth <= 600) {
+        centers.forEach(center => {
+            center.style.display = 'none';
+        });
+        cards.forEach(card => {
+            card.style.margin = '15px'
+            if (card.style.backgroundColor === 'transparent'){
+                card.style.display = 'none'
+            }
+            else {
+                return
+            }
+        })
+        
+    } else {
+        centers.forEach(center => {
+            center.style.display = 'flex';
+        })
+        cards.forEach(card => {
+            card.style.margin = '0'
+            if (card.style.display === 'none'){
+                card.style.display = 'flex'
+                card.style.margin = '0'
+            }
+            else {
+                return
+            }
+        })
+    }
+}
+
+// Run the function on initial load
+document.addEventListener('DOMContentLoaded', adjustTimelineCenters);
+
+// Run the function on window resize
+window.addEventListener('resize', adjustTimelineCenters);

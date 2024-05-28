@@ -1,0 +1,37 @@
+.contact-me {
+    background-color: #d9832e;
+    /* width: 100%; */
+
+    padding: 100px 100px 100px 200px;
+}
+
+.contact-me div {
+    display: flex;
+    gap: 40px;
+    width: 300px;
+    margin: 10px;
+    color: white;
+}
+
+.contact-me a {
+    color: white;
+    text-decoration: underline;
+}
+
+@media (max-width: 710px) {
+    .contact-me {
+        padding: 100px;
+    }
+}
+
+@media (max-width: 510px) {
+    .contact-me {
+        padding: 100px 10px;
+    }
+}
+
+@media (max-width: 316px) {
+    .contact-me {
+        font-size: 10px;
+    }
+}

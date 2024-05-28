@@ -4,12 +4,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding: 50px 100px 100px 200px;
+}
+
+.timeline h1 {
+    margin: 50px;
 }
 
 .time {
     display: flex;
-    gap: 20px;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .timeline-center {
@@ -83,4 +88,16 @@
     font-weight: normal;
     color: black;
     text-decoration: underline;
+}
+
+@media (max-width: 890px) {
+    .timeline {
+        padding: 50px 0px 100px 100px;
+    }
+}
+
+@media (max-width: 710px) {
+    .timeline {
+        padding: 50px 0 100px 0;
+    }
 }
