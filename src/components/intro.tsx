@@ -47,6 +47,7 @@ export const Intro = () => {
         </span>{' '}
         developer creating modern AI Apps, Agents & Chatbots.
       </motion.h1>
+      {/* . */}
 
       <motion.p
         initial={{ opacity: 0, y: 100 }}
